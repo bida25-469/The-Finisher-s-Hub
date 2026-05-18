@@ -1,0 +1,207 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+    text-shadow: 0 0 8px yellow;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/024/541/319/small_2x/soccer-stadium-illuminated-by-spotlights-and-empty-green-grass-playground-big-stadium-generative-ai-free-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    font-size:  24px;
+    color: yellow;
+    text-shadow: 2px 2px 4px black;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 700px;
+    animaton: fadeIn 2s ease-in;
+}
+
+.welcome {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin: 20px auto;
+    max-width: 700px;
+    font-style: italic;
+}
+
+.contact a {
+    color: yellow;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.contact a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+label {
+    color:white;
+    font-weight: bold;
+}
+
+.btn-success {
+    width: 100%;
+    margin-top: 10px;
+}
+
+h1 {
+    text-shadow: 0 0 10px rgb(168, 168, 17), 0 0 20px rgb(165, 165, 27);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow: 0 0 10px yellow; }
+    to {tex-shadow: 0 0 20px yellow, 0 0 40px gold; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to {opacity: 3; }
+}
+
+
+.player-card {
+  background: linear-gradient(160deg, #e8e483, #c8b820, #f5f07a);
+  width: 250px;
+  height: auto;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #5a4a00;
+  box-shadow: 0 0 30px gold;
+}
+
+.player-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5a4a00;
+  margin: 0;
+}
+
+.player-pos {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a4a00;
+  margin: 5px 0;
+}
+
+.overall {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5a4a00;
+  margin: 5px 0;
+}
+
+.player-info {
+  font-size: 13px;
+  color: #5a4a00;
+  margin: 3px 0;
+}
+
+.stats-table {
+  width: 100%;
+  border-top: 2px solid #5a4a00;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.stats-table td {
+  padding: 8px;
+  font-weight: bold;
+  color: #5a4a00;
+  font-size: 16px;
+  text-align: center;
+  width: 50%;
+}
+
+.stats-table span {
+  font-size: 11px;
+  display: block;
+  color: #5a4a00;
+}
+
+.skills-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.skills-left, .skills-right {
+  width: 200px;
+  text-align: center;
+}
+
+.skills-left h3, .skills-right h3 {
+  color: yellow;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.skills-left ul, .skills-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-left li, .skills-right li {
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+}
