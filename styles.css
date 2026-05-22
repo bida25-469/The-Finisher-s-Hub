@@ -25,8 +25,8 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
-    text-shadow: 2px 2px 4px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(34, 33, 33);
 }
 
 .center-heading {
@@ -99,7 +99,7 @@ label {
 
 h1 {
     text-shadow: 0 0 10px rgb(168, 168, 17), 0 0 20px rgb(165, 165, 27);
-    animation: glow 2s infinite alternate;
+    animation: glow 4s infinite alternate;
 }
 
 @keyframes glow {
