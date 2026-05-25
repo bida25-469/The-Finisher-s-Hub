@@ -9,66 +9,54 @@
     <!--Custom CSS-->
         <link rel="stylesheet" href="styles.css">
     </head>
-    <a href="index.html" class="Back to Home-btn">Back to Home</a>
-    <body>
-        <header>
-            <nav>
-            <a href="index.html">Home</a>
+   <div class="page-wrapper">
+           <header>
+             <nav>
+                <div class="logo">ATIN:<span class="glow-text">THE FINISHER'S MIND</span></div>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
             <a href="Blog-Post.html">Blog-Post</a>
             <a href="contact.html">Contact</a>
             </nav>
+            </header>
 
-            <h1>Atin:The Finisher's Mind⚽</h1>
-        </header>
-        <main class="container mt-4">
-            <h2 class="center-heading">Reach Out</h2>
-            <p class="center-heading">COSAFA,Football Scouts,Football Clubs etc interested in signing me please fill in the form below:</p>
+  <div class="contact-wrap">
+    <form class="contact-form">
+      <div class="form-group">
+        <label>Your Full Name</label>
+        <input type="text" placeholder="Enter Your Full Name" required>
+      </div>
 
-            <form>
-                <div class="mb-3">
-                    <label>Your Full Name</label>
-                    <Input type="text" class="form-control"
-                    placeholder="Enter Your Full Name">
-                </div>
-                <div class="mb-3">
-                    <label>Your Email</label>
-                    <Input type="email" class="form-control"
-                        placeholder="Enter Your Email Address">
-                    </div>
-                        <div class="mb-3">
-                            <label>Your Phone Number</label>
-                            <Input type="tel" class="form-control"
-                                placeholder="Enter Your Phone Number">
-                        </div>
-                        <div class="mb-3">
-                            <label>Team Name Or Organisation</label>
-                            <Input type="text" class="form-control"
-                            placeholder="Which team or organization are you from?">
-                        </div>
-                        <div class="mb-3">
-                            <label>Your Message</label>
-                            <Input type="text" class="form,-control"
-                            placeholder="Leave Your Message Here...">
-                        </div>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter Your Email Address" required>
+      </div>
 
-                        <button type="Submit" class="btn btn-success">
-                            Send Message
-                        </button>
-            </form>
-            
-            <hr>
+      <div class="form-group">
+        <label>Your Phone Number</label>
+        <input type="tel" placeholder="Enter Your Phone Number">
+      </div>
 
-           <h3 class="center-heading">My Contact Information📞</h3>
+      <div class="form-group">
+        <label>Team Name Or Organisation</label>
+        <input type="text" placeholder="Which team or organization are you from?">
+      </div>
 
-            <p class="center-heading">Phone: <a href="tel:+26777557373"
-                style="color:yellow;">+267 77557373</a></p>
-            <p class="center-heading">WhatsApp: <a href="https://wa.me/26777557373"
-                style="color:yellow;">Let's talk On WhatsApp</a></p>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea placeholder="Leave Your Message Here" rows="5" required></textarea>
+      </div>
 
-            </main>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
 
+    <div class="contact-info">
+      <h3>My Contact Info📞</h3>
+      <p>Phone: <a href="tel:+26777557373">+267 77557373</a></p>
+      <p>WhatsApp: <a href="https://wa.me/26777557373" target="_blank">Let's talk On WhatsApp</a></p>
+    </div>
+  </div>
                         <footer>
                 <p>&copy; 2026 Amogelang Atin</p>
             </footer>
