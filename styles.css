@@ -54,11 +54,30 @@ nav a.active, nav a:hover {
 
 .hero {
   min-height: 100vh;
-  padding: 120px 20px 50px;
+  padding-top: 100px;  
+  padding-left: 40px;   
+  padding-right: 40px;
+  padding-bottom: 40px; 
   text-align: left;
-  background: radial-gradient(circle at center top, rgba(255,193,7,0.15) 0%,transparent 60%);
+  background: radial-gradient(circle at center top, #1a1a1a, #0a0a0a);
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
+.hero-image {
+  width: 100%;
+  height: 500px;        
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  object-position: center; 
+}
 .badge {
   position: absolute;
   left: 50%;
@@ -244,7 +263,6 @@ footer {
 .zigzag::after { left: 5px; 
 }
 
-/* Photo glow */
 .profile-img,
 img[alt*="profile"],
 .hero-img {
@@ -858,15 +876,12 @@ nav a.active {
   transition: width 1.5s ease;
 }
 
-/* Blog Page Styles - Black & Orange Glow Theme */
 
-/* Page background */
-body {
+.blo-post body {
   background: #0a0a0a;
   color: #fff;
 }
 
-/* Blog container */
 .blog-wrap {
   max-width: 850px;
   margin: 60px auto 100px;
@@ -876,7 +891,6 @@ body {
   gap: 40px;
 }
 
-/* Blog card */
 .blog-card {
   background: rgba(15, 15, 15, 0.7);
   backdrop-filter: blur(10px);
@@ -889,7 +903,6 @@ body {
   overflow: hidden;
 }
 
-/* Subtle orange glow effect on hover */
 .blog-card::before {
   content: '';
   position: absolute;
@@ -913,7 +926,7 @@ body {
   opacity: 1;
 }
 
-/* Date */
+
 .blog-date {
   font-size: 0.85rem;
   color: #ff8c00;
@@ -923,7 +936,6 @@ body {
   font-weight: 600;
 }
 
-/* Title */
 .blog-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.4rem;
@@ -938,7 +950,6 @@ body {
   text-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
 }
 
-/* Content */
 .blog-content p {
   color: #d0d0d0;
   line-height: 1.8;
@@ -951,7 +962,6 @@ body {
   margin-bottom: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .blog-wrap {
     margin: 40px auto 80px;
@@ -968,5 +978,120 @@ body {
   
   .blog-content p {
     font-size: 1rem;
+  }
+}
+
+.contact-page body {
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrap {
+  max-width: 700px;
+  margin: 80px auto 60px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #666;
+}
+.btn-submit {
+  background: #ff8c00;
+  color: #0a0a0a;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #ffa733;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+}
+
+.contact-info h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #d0d0d0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #ff8c00;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+  text-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .contact-wrap {
+    margin: 60px auto 40px auto;
+    padding: 0 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
   }
 }
